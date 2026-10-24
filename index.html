@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gaming</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Creepster&family=Rubik:wght@400;600&display=swap">
+<style>
+:root {
+  --night: #07090e;
+  --panel: #0e121b;
+  --line: #2b3346;
+  --bone: #efe6cf;
+  --bone-dim: #b9ab88;
+  --glow: #ffd23f;
+  --moon: #9fb6d9;
+  color-scheme: dark;
+}
+body {
+  margin: 0; min-height: 100vh; background: var(--night); color: var(--bone);
+  font-family: "Rubik", "Segoe UI", system-ui, sans-serif;
+  display: flex; flex-direction: column; align-items: center; gap: 28px;
+  padding-block: 56px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  box-sizing: border-box;
+}
+h1 { font-family: "Bungee", "Arial Black", sans-serif; font-size: 22px; letter-spacing: 0.12em; color: var(--moon); margin: 0; }
+.card {
+  width: min(560px, 100%); box-sizing: border-box; background: var(--panel); border: 2px solid var(--line); border-radius: 18px;
+  padding: 28px; display: flex; flex-direction: column; gap: 12px; text-decoration: none; color: inherit;
+}
+.card:hover, .card:focus-visible { border-color: var(--glow); outline: none; }
+.title { font-family: "Creepster", Impact, fantasy; font-size: 64px; line-height: 0.95; margin: 0; letter-spacing: 0.04em; }
+.title span { color: var(--glow); }
+.card p { margin: 0; color: var(--bone-dim); line-height: 1.5; }
+.play { align-self: flex-start; font-family: "Bungee", "Arial Black", sans-serif; background: var(--glow); color: #15110d; border-radius: 10px; padding: 10px 18px; }
+small { color: #7d869a; }
+</style>
+</head>
+<body>
+<h1>GAMES</h1>
+<a class="card" href="rattle-rex/">
+  <p class="title">RATTLE <span>REX</span></p>
+  <p>A museum T-Rex skeleton wakes up after closing time. Chomp bony critters for calcium, dodge Gary the night guard, and survive Moby-Dead the whale. Keyboard or touch.</p>
+  <span class="play">Play</span>
+</a>
+<small>Trial builds. Feedback welcome.</small>
+</body>
+</html>
